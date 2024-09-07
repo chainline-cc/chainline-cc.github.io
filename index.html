@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
 <body>
+<div class="row">
+  <div class="column left">
 <img src="chainline24-2sq.png" alt="chainline-cc" width="400" height="400">
+  </div>
+  <div class="column right">
 <p style="font-family: Arial, sans-serif;"><font size="+2">service course & event support
   <br><br>
 hello@chainline.cc</font></p>
+  </div>
+</div>
+
 </body>
 </html>
